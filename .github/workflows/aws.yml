@@ -9,7 +9,7 @@ name: flask_sample on aws
 jobs:
   deploy:
     name: Deploy
-    runs-on: alpine:3.16.0
+    runs-on: ubuntu:20.04
 
     steps:
     - name: Checkout
@@ -38,4 +38,3 @@ jobs:
         echo "Pushing image to ECR..."
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-
