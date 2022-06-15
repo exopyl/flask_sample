@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ main ]
 
-name: `flask_sample` CI on ECR
+name: flask_sample on aws
 
 jobs:
   deploy:
