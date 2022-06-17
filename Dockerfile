@@ -15,7 +15,7 @@ WORKDIR ${APP_DIR}
 
 # expose web server port
 # only http, for ssl use reverse proxy
-EXPOSE 5000
+EXPOSE 80
 
 COPY main.py /app
 
